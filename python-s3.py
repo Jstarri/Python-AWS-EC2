@@ -53,5 +53,6 @@ for bucket in buckets:
     print(bucket["Name"])
 
 # list buckets ARN
+
 for bucket in buckets:
     print('arn:aws:s3:::' + bucket["Name"])
