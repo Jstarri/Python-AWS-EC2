@@ -53,14 +53,5 @@ for bucket in buckets:
     print(bucket["Name"])
 
 # list buckets ARN
-
-buckets_arn = ['mystaticwebite05 - arn:aws:s3:::mystaticwebsite05', 'elasticbeanstalk-us-east-1-436248312882 - arn:aws:s3:::elasticbeanstalk-us-east-1-436248312882', 'codepipeline-us-east-1-749074274960 - arn:aws:s3:::codepipeline-us-east-1-749074274960', 'cf-templates-5txg9kru1n4d-us-east-1 - arn:aws:s3:::cf-templates-5txg9kru1n4d-us-east-1', 'bucket-time50 - arn:aws:s3:::bucket-time50', 'aws-sam-cli-managed-default-samclisourcebucket-1inigs96ss3bz - arn:aws:s3:::aws-sam-cli-managed-default-samclisourcebucket-1inigs96ss3bz', 'aws-cloudtrail-logs-436248312882-1d6c66b0 - arn:aws:s3:::aws-cloudtrail-logs-436248312882-1d6c66b0']
-
-print('AWS Buckets ARN:')
-print(buckets_arn[0])
-print(buckets_arn[1])
-print(buckets_arn[2])
-print(buckets_arn[3])
-print(buckets_arn[4])
-print(buckets_arn[5])
-print(buckets_arn[6])
+for bucket in buckets:
+    print('arn:aws:s3:::' + bucket["Name"])
